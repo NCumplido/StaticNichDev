@@ -1,10 +1,6 @@
 body{font-size:14pt;}
-
 h1 {font-family: verdana; font-size: 14pt; color: red;text-shadow: 2px 4px 5px #000;}
 h2 {font-family: verdana; font-size: 12pt; color: blue;}
-
 p {font-family: verdana; font-size: 10pt; color: navy;}
-
 section {font-size: 18pt; color: blue;}
-
 section#introduction{font-size: 14pt; background-color: yellow;}
