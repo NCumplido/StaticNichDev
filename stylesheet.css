@@ -1,3 +1,15 @@
+.homeLink {
+    color:rgb(78, 0, 0);
+}
+.homeLink:hover {
+    color:crimson;
+}
+.homeLink:active {
+    color:firebrick;
+}
+.homeLink:visited {
+    color:#99004d;
+}
 h1 { 
     font-size:40px; 
     color:#ff0000; 
