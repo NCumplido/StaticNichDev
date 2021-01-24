@@ -1,5 +1,6 @@
 .homeLink {
     color:rgb(78, 0, 0);
+    align-content: left;
 }
 .homeLink:hover {
     color:crimson;
