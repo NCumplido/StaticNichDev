@@ -69,3 +69,138 @@ footer {
     background-color: rgba(63, 63, 63, 0.301);
     bottom:0px;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.homeBanner{
+    color:rgb(78, 0, 0);
+    align-content: left;
+}
+.homeLink {
+    color:rgb(78, 0, 0);
+    align-content: left;
+}
+.homeLink:hover {
+    color:crimson;
+}
+.homeLink:active {
+    color:firebrick;
+}
+.homeLink:visited {
+    color:#99004d;
+}
+
+h1{
+    color: #426696;
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+h2,
+p {
+    color: #658ec6;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+h3{
+    color: #426696;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+main{
+    font-family: "Noto Sans", sans-serif;
+    min-height: 100vh; /*Fill the screen*/
+    background: linear-gradient(to right top, #4fa9af, #9df0fd); /*Diagonally, from bottom left to top right*/
+    display: flex; /*The below won't work if this isn't declared*/
+    align-items: center;/*Vertical alignment*/
+    justify-content: center;/*horizontal alignment*/
+}
+
+.glass{    
+
+    background: white;    
+    min-height: 80vh;       /*80% of height*/
+    width: 60%;
+    display: flex;
+
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255, 255, 255, 0.7), /*The rgba property changes the opacity of a copmonent */
+        rgba(255, 255, 255, 0.3) 
+    ); 
+
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+
+}
+
+.dashboard{   
+    display: flex; 
+    flex: 1;
+    flex-direction:column;
+    
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255, 255, 255, 0.7), /*The rgba property changes the opacity of a copmonent */
+        rgba(255, 255, 255, 0.3) 
+    );
+
+    border-radius: 2rem;
+}
+
+.dashboard h3{
+    width: 50%;
+}
+
+.projects{
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    /* I lose the title here:  */
+    justify-content: space-between;
+    flex: 3;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255, 255, 255, 8),
+        rgba(255, 255, 255, 0.5)  /* Cool/weird glassy affect: 0.2 0.5*/
+    );
+    border-radius: 1rem;
+    margin: 2rem, 0rem;
+    padding: 2rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2); /*Shadow pop*/
+}
+
+.project p{
+    display: flex;
+    justify-content: center;
+}
+
+.link{
+    margin: 2rem 0rem;
+    padding: 1rem 5rem;
+    align-items: center;
+}
+
+/*          I can select the subtags of a div/superclass
+.link h4{
+    padding: 0rem 2rem;
+}
+*/

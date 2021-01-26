@@ -30,7 +30,8 @@ h1{
 }
 
 h2,
-p {
+p,
+ul {
     color: #658ec6;
     font-weight: 600;
     opacity: 0.8;
@@ -38,8 +39,14 @@ p {
 
 h3{
     color: #426696;
-    font-weight: 600;
+    font-weight: 300;
     opacity: 0.8;
+}
+
+li{
+    color: #658ec6;
+    font-weight: 300;
+    opacity: 1
 }
 
 main{
@@ -55,7 +62,7 @@ main{
 
     background: white;    
     min-height: 80vh;       /*80% of height*/
-    width: 60%;
+    width: 80%;             /*Was 60%*/
     display: flex;
 
     background: linear-gradient(
