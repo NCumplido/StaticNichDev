@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const dino = document.querySelector('.dino')
     const grid = document.querySelector('.grid')
     const alertDiv = document.getElementById('alert')
+    const scoreDiv = document.getElementById('score')
+
+    let score = 0
 
     let position = 0        //Starting point
     let gravity = 0.9       //DYK: Value of gravity is 9.806
@@ -15,7 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.keyCode === 32) {
             if(!isJumping){
                 isJumping = true
+                
                 jump()
+            }
+            if(isGameOver){
+                location.reload();
             }
         }
     }
@@ -25,6 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Move x amount of pixels until the timer has finished
     function jump() {
+        score++
+        scoreDiv.innerHTML = 'Score: ' + score
         let count = 0
         let timerID = setInterval(function () {
 
@@ -86,13 +95,16 @@ document.addEventListener('DOMContentLoaded', () => {
             //Collision detection
             if(obstaclePosition > 0 && obstaclePosition < 60 && position < 60){
                 clearInterval(timerID)
-                alertDiv.innerHTML = 'Game Over'
+                alertDiv.innerHTML = 'Game Over - press the space bar to restart'
                 isGameOver = true
 
                 //Remove all children
                 while (grid.firstChild){
                     grid.removeChild(grid.lastChild) //ToDo: Look into documentation and maybe only freeze one obstacle and the dino?
                 }
+
+            }
+            else{
 
             }
 
