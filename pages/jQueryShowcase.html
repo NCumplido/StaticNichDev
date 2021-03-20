@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+    <head>
+	    <meta charset="UTF-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	    <title>NichDev - jQueryShowcase</title>
+	    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">  
+        <link rel="stylesheet" href="/css/glassStylesheet.css">
+        
+        <!--Noto Sans font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+		<header>
+		
+			<h4 align="right">These web pages are hosted by <a href="https://hostman.com/">Hostman</a></h4>
+		
+            <a href="/index.html" class="homeLink"><h1 align="left">NichDev</a> - jQueryShowcase</h1>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $('#btnFade').on('click', function(){
+                        $('#fadeHeader').fadeToggle(1000);    
+                        $('#fadeParagraph').fadeToggle(1000);  
+                        $('#fadeLink').fadeToggle(1000);                      
+                    });
+                    $('#headerSlideDashBoard').on('click', function(){
+                        $('#dashBoard').slideToggle(1000);
+                    });
+
+                    $('#divlolNo').on('mouseenter', function(){
+                        $('#divlolNo').fadeOut(500);
+                    });
+                    
+                    $('#convenienceClickLink').click(function(){
+                        $('#convenienceClickParagraph').css('font-size', '40px');
+                        alert("Convenience is cool");
+                    });
+                });
+            </script>
+	
+		</header>
+
+	    <main>
+		    <section class="glass">
+
+                <div id="dashBoard" class="dashboard">
+
+                </div>
+
+                <div class="projects">
+
+                    <h1> <a id="jqHome" class="jqHome" href="https://jquery.com/">jQuery homepage</a> </h1>
+
+                    <h4 id="headerSlideDashBoard">Slide</h4>
+
+                    <div id = "divBigFade" class="project">
+                        <h2 id="fadeHeader" class="testHeader">Header Fade</h2>
+                        <p id="fadeParagraph" class="paragraph">Lorem Ipsum fadum</p>
+                        <a id="fadeLink" class="testLink" href="#">fadeLink</a>
+                        <button id="btnFade">Fade</button>
+                    </div>
+
+                    <div id="divlolNo" class="project">
+                        <h2 id="lolNoHeader" class="lolNoHeader">Header lolNo( disabled toggle)</h2>
+                        <p id="lolNoParagraph" class="testParagraph">lolNo Paragraph</p>
+                        <a id="lolNoLink" class="testLink" href="#">lolNo Link</a>
+                        <button id="btnlolNo">lolNo</button>
+                    </div>
+
+                    <div id="divconvenienceClick" class="project">
+                        <h2 id="convenienceClickHeader" class="convenienceClickHeader">Header convenienceClick</h2>
+                        <p id="convenienceClickParagraph" class="convenienceClickParagraph">convenienceClick Paragraph</p>
+                        <a id="convenienceClickLink" class="convenienceClickLink" href="#">convenienceClick Link</a>
+                    </div>
+
+                </div>
+
+            </section>
+
+		</main>
+		
+		<footer>
+			<a href="pages/contact.html"> <h4 align ="right"> Contact </h4> </a> 
+			<a href="pages/about.html"> <h4 align ="right"> About </h4> </a>
+			<a href="https://www.youtube.com/watch?v=O7WbVj5apxU">Credit goes to Dev Ed for the glass layout</a>
+			<figure align="right">
+				<a href="https://www.clicsargent.org.uk/">
+					<img width="100" height="100" src="/images/clic-sargent-squarelogo-1580899200839.png" alt="Clic Sargent Logo" title="Clic Sargent Logo"/> 
+				</a>
+		
+				<a href="https://www.maggies.org/">
+					<img width="183.5" height="73.75" src="/images/maggiesLogo.png" alt="Maggie's Logo" title="Maggie's Logo"/>
+				</a>
+			</figure>
+		</footer>
+
+    </body>
+
+</html>
