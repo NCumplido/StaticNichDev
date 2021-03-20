@@ -1,7 +1,7 @@
 console.log("Hello from console");
 
-let numOne = null;
-let numTwo = null;
+let numOne = 68;
+let numTwo = 1;
 
 
 
