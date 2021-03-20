@@ -4,6 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('.grid')
     const alertDiv = document.getElementById('alert')
     const scoreDiv = document.getElementById('score')
+    
+    document.getElementById("btnBattleRex").addEventListener("click", 
+        function(){ document.getElementById("dino").src = "/images/battlerex4nic.png";  
+        });
 
     let score = 0
 
@@ -99,9 +103,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 isGameOver = true
 
                 //Remove all children
-                while (grid.firstChild){
-                    grid.removeChild(grid.lastChild) //ToDo: Look into documentation and maybe only freeze one obstacle and the dino?
-                }
+                // while (grid.firstChild){
+                //     grid.removeChild(grid.lastChild) //ToDo: Look into documentation and maybe only freeze one obstacle and the dino?
+                // }
 
             }
             else{
